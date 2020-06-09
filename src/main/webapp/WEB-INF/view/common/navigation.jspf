@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-sm navbar-dark">
+		<a class="navbar-brand" href=""><i class="material-icons mr-1">camera_roll</i>MovieCruiser</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse ml-auto mr-1 flex-grow-0"
+			id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li><security:authorize access="isAuthenticated()">
+    Hello <security:authentication property="principal.username" />
+					</security:authorize></li>
+					<li><a href="<c:url value="/logout" />">Logout</a></li>
+					
+
+			</ul>
+		</div>
+	</nav>

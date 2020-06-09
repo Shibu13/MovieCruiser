@@ -1,0 +1,1 @@
+document.write('<footer class="footer"><div class="container ml-n1"><span class="">Copyright &copy; 2020</span></div></footer>');
